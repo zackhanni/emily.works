@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <nav className="navbar navbar-expand-md">
+    <nav className="container navbar navbar-expand-md">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Emily Hanni
