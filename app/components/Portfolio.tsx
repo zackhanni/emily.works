@@ -4,12 +4,12 @@ import Link from "next/link";
 const projects = [
   {
     name: "Commercial",
-    link: "/",
+    link: "/commercial",
     image: "/commercial.jpeg",
   },
   {
     name: "Residential",
-    link: "/",
+    link: "/residential",
     image: "/residential.jpeg",
   },
   {
