@@ -21,7 +21,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section className="container py-6">
+    <section className="container py-8">
       <div className="row">
         {projects.map((project) => {
           return (
@@ -32,7 +32,7 @@ export default function Portfolio() {
                   width={400}
                   height={300}
                   alt={project.name}
-                  className="object-cover w-[400px] h-[300px]"
+                  className="object-cover w-full h-[300px]"
                 />
                 <p className="text-center pt-2 pb-4 hover:underline">{`${project.name} projects`}</p>
               </Link>
