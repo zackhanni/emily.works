@@ -2,32 +2,22 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className=" bg-slate-400 py-6">
+    <footer className="text-center bg-[#f7f4ee] py-8">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6">
-            <Image
-              src="/emily.jpg"
-              width={250}
-              height={250}
-              alt="Emily Hanni portrait"
-              className="object-cover w-[250px] h-[250px]"
-            />
-          </div>
-          <div className="col-12 col-md-6 bg-gray-600 text-white rounded-2xl p-4">
-            <h2>Emily Hanni</h2>
-            <p>FF+E Specialist, Interior design professional</p>
-            <p>
-              Detail-oriented FF+E Specialist in the commercial, hospitality,
-              and residential interior design industries. Highly skilled at B2B
-              communication and coordination with high-profile clients and
-              diverse teams as a front-facing representative of design firms.
-            </p>
-            <p>Hire me!</p>
-            <a href="/" className="text-white no-underline">
-              <p className="hover:underline">Download Resume</p>
-            </a>
-          </div>
+          <a
+            href="mailto:stein.emilyj@gmail.com"
+            className="no-underline hover:underline text-black col-12 col-md-4 "
+          >
+            <p className="mb-md-0">stein.emilyj@gmail.com</p>
+          </a>
+          <a
+            href="tel:1234567890"
+            className="no-underline hover:underline text-black col-12 col-md-4"
+          >
+            <p className="mb-md-0">123 456 7890</p>
+          </a>
+          <p className="col-12 col-md-4 mb-md-0 ">Philadelphia, PA</p>
         </div>
       </div>
     </footer>
