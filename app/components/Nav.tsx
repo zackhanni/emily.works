@@ -1,20 +1,27 @@
+"use client";
+import { useState } from "react";
+
 export default function Nav() {
+  const [mobileNav, setMobileNav] = useState(false);
+
   return (
-    <nav className="container navbar navbar-expand-md">
+    // why isnt sticky working?
+    <nav className="sticky top-0 container navbar navbar-expand-md">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Emily Hanni
         </a>
         {/* mobile button */}
         <button
-          className="d-block d-md-none"
+          className="d-block d-md-none z-10"
           type="button"
           aria-label="Toggle navigation"
+          onClick={() => setMobileNav(!mobileNav)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         {/* main nav selections */}
-        <div className="d-none d-md-flex">
+        <div className={`${mobileNav ? "mobileNavCSS" : "d-none"} d-md-flex`}>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" href="/about">
