@@ -4,6 +4,8 @@ import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.css";
+import Navigation from "./components/Navigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Nav />
+        {/* <Nav /> */}
+        <Navigation />
         {children}
         <Footer />
       </body>
