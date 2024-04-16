@@ -17,6 +17,11 @@ const projects = [
     link: "/",
     image: "/staging.jpeg",
   },
+  {
+    name: "Social media management",
+    link: "/",
+    image: "/staging.jpeg",
+  },
 ];
 
 export default function Portfolio() {
@@ -34,7 +39,9 @@ export default function Portfolio() {
                   alt={project.name}
                   className="object-cover w-full h-[300px]"
                 />
-                <p className="text-center pt-2 pb-4 hover:underline">{`${project.name} projects`}</p>
+                <p className="text-center pt-2 pb-4 hover:underline">
+                  {project.name}
+                </p>
               </Link>
             </div>
           );
